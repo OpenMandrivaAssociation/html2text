@@ -7,7 +7,6 @@ License:	GPL
 URL:		http://userpage.fu-berlin.de/~mbayer/tools/html2text.html
 Source0:        http://userpage.fu-berlin.de/%7Embayer/tools/%{name}-%{version}.tar.bz2
 BuildRequires:  gcc-c++
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 html2text is a command line utility, written in C++, that converts HTML

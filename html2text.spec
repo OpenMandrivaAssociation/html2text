@@ -1,7 +1,7 @@
 Summary:	A command line utility to convert HTML document to plain text
 Name:		html2text
 Version:	1.3.2a
-Release:	%mkrel 5
+Release:	%mkrel 6
 Group:		File tools
 License:	GPL
 URL:		http://userpage.fu-berlin.de/~mbayer/tools/html2text.html
@@ -18,8 +18,8 @@ documents into plain text.
 %setup -q
 
 %build
-%configure
-%make
+%configure2_5x
+%make DEBUG="%{optflags}" LDFLAGS="%{ldflags}"
 
 %install
 rm -rf %{buildroot}

@@ -13,11 +13,10 @@ html2text is a command line utility, written in C++, that converts HTML
 documents into plain text.
 
 %prep
-
 %setup -q
 
 %build
-%configure2_5x
+%configure
 %make DEBUG="%{optflags}" LDFLAGS="%{ldflags}"
 
 %install
@@ -33,4 +32,3 @@ install -m644 %{name}rc.5 %{buildroot}%{_mandir}/man5/
 %doc CHANGES COPYING CREDITS INSTALL KNOWN_BUGS RELEASE_NOTES README TODO
 %{_bindir}/*
 %{_mandir}/man?/*
-

@@ -1,23 +1,22 @@
 Summary:	A command line utility to convert HTML document to plain text
 Name:		html2text
 Version:	1.3.2a
-Release:	23
+Release:	24
 Group:		File tools
 License:	GPLv2
-Url:		http://userpage.fu-berlin.de/~mbayer/tools/html2text.html
-Source0:        http://userpage.fu-berlin.de/%7Embayer/tools/%{name}-%{version}.tar.bz2
-BuildRequires:  gcc-c++
+Url:		http://www.mbayer.de/html2text/
+Source0:        http://www.mbayer.de/html2text/downloads/%{name}-%{version}.tar.bz2
 
 %description
 html2text is a command line utility, written in C++, that converts HTML
 documents into plain text.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
-%make DEBUG="%{optflags}" LDFLAGS="%{ldflags}"
+%make_build DEBUG="%{optflags}" LDFLAGS="%{ldflags}"
 
 %install
 mkdir -p %{buildroot}/{%{_bindir},%{_mandir}/{man1,man5}}

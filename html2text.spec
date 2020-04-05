@@ -4,7 +4,9 @@ Version:	1.3.2a
 Release:	25
 Group:		File tools
 License:	GPLv2
-Url:		http://www.mbayer.de/html2text/
+Url:    https://github.com/grobian/html2text
+# Previous (old) url:
+#Url:		http://www.mbayer.de/html2text/
 Source0:        http://www.mbayer.de/html2text/downloads/%{name}-%{version}.tar.bz2
 
 %description

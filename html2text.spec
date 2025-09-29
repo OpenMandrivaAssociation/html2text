@@ -7,6 +7,10 @@ License:	GPLv2
 Url:		https://github.com/grobian/html2text
 Source0:	https://github.com/grobian/html2text/releases/download/v%{version}/%{name}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gettext-devel
+
 %description
 html2text is a command line utility, written in C++, that converts HTML
 documents into plain text.

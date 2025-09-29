@@ -9,6 +9,7 @@ Source0:	https://github.com/grobian/html2text/releases/download/v%{version}/%{na
 
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	autoconf-archive
 BuildRequires:	gettext-devel
 
 %description

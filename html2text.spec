@@ -1,7 +1,7 @@
 Summary:	A command line utility to convert HTML document to plain text
 Name:		html2text
 Version:	2.3.0
-Release:	27
+Release:	1
 Group:		File tools
 License:	GPLv2
 Url:		https://github.com/grobian/html2text

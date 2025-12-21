@@ -7,6 +7,8 @@ License:	GPLv2
 Url:		https://github.com/grobian/html2text
 Source0:	https://github.com/grobian/html2text/releases/download/v%{version}/%{name}-%{version}.tar.gz
 
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	autoconf-archive
